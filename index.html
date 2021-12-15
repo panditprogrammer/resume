@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A Professional Resume Builder by PanditProgrammer . This resume Builder is created by Logo_panditProgrammer for specially students and Fresher to make their resume quickly for Free. You can create a CV or Resume by editing few lines in resume Templates without any cost and print directly or you can save as PDF format. PanditProgrammer CV Builder for students for Free . Free resume Builder for students. CV maker for students. resume maker free by PanditProgrammer .  ">
+    <meta name="keywords" content="Resume Builder, resume maker, PanditProgrammer resume, Pandit programmer resume, cv builder , students resume builder, free resume for students , free cv maker for students ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Resume Builder for students or Fresher | A Resume builder by PanditProgrammer.com , where you can get your resume quickly by editing fews lines in resume Templates. | students Resume maker by Pandit Programmer </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="main_body">
+    <header>
+        <div class="logo">
+            <img src="src/logo.png" alt="Logo_panditProgrammer">
+        </div>
+
+        <nav class="menu">
+            <a href="/">Home</a>
+            <a href="/">Services</a>
+            <a href="http://PanditProgrammer.com">Official website</a>
+            <a href="http://facebook.com/PanditProgrammer">Contact</a>
+            <a href="/">Help</a>
+        </nav>
+
+        <span class="desc">Professional Resume <br> Builder for Free  </span>
+
+    </header>
+    <div class="edit_print"><h1>Edit & Print</h1></div>
+
+    <div class="resume" id="printResume" >
+        <div class="main" contenteditable="true">
+            <div class="head">
+                <h1>Pandit Programmer</h1>
+                <p>Ara,bihar(802165),India</p>
+                <p>Phone: 8340460297</p>
+                <p>Email: PanditProgrammer@gmail.com</p>
+                <p>website: PanditProgrammer.com</p>
+            </div>
+
+
+            <div class="skills">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Full Stack Web Developer</li>
+                    <li>Android Developer</li>
+                    <li>Machine Learning Engineer</li>
+                    <li>Data Scientist</li>
+                    <li>Software Developer</li>
+                </ul>
+            </div>
+
+
+            <div class="work_exp">
+                <h1>Experiances</h1>
+                <ul>
+                    <li>Full Stack Web Developer (2+ years) in HTML CSS Javascript PHP MYSQL and SQlite.</li>
+                    <li>Data Scientist in Python (1+ year)</li>
+                    <li>Android Developer in Java (2+ Years)</li>
+                </ul>
+
+            </div>
+
+
+            <div class="education">
+                <h1>Education</h1>
+                <p>Masters in Computer Science from IIT Kanpur.</p>
+                <p>Software Engineer (self taught)</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam alias saepe ea, suscipit
+                    ullam! Commodi laboriosam, magni nisi amet corporis veritatis voluptatum ullam soluta omnis! Ratione
+                    possimus alias numquam.</p>
+            </div>
+
+
+            <div class="objectives">
+                <h1>Objectives</h1>
+                <p>Work for best World best leading IT company.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae quos itaque corrupti quod
+                    qui officiis, animi, aspernatur magni consectetur sunt facere autem incidunt atque quaerat numquam
+                    corporis saepe vel.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="functions">
+        <div class="function_container">
+            <button onclick="printResume()">Print Resume</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; All rights Reserved <a href="http://PanditProgrammer.com">PanditProgrammer</a> 2021</p>
+        <p>Designed and Developed by <a href="http://PanditProgrammer.com">PanditProgrammer.com</a>  </p>
+    </footer>
+
+
+
+    <script>
+        function printResume() {
+            let original_body = document.getElementById("main_body").innerHTML;
+            let printable = document.getElementById("printResume").innerHTML;
+            let body = document.getElementById("main_body").innerHTML = printable;
+            window.print();
+            body.innerHTML = original_body;
+            location.reload();
+        }
+    </script>
+
+
+</body>
+
+</html>

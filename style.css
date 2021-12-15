@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    --primary_color: orange;
+    --secondary_color: #0370fc;
+    --black_color: black;
+    --white_color: white;
+    --text_color: #9fb8cd;
+    --h_color: tomato;
+    
+}
+h1{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    /* border-bottom: 1px groove black; */
+    /* border-bottom-style: double; */
+    background-color: #9fb8cd;;
+}
+
+p{
+    margin-top: 0.5rem;
+    margin-bottom: 00.5rem;
+    font-size: 1rem;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    background-color: rgb(245, 245, 245);
+
+}
+
+header{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .desc{
+    position: absolute;
+    left: 25%;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--secondary_color);
+
+    animation: color_change 10s infinite alternate;
+
+}
+
+@keyframes color_change{
+0%{
+    color: var(--secondary_color);
+}
+
+25%{
+    color: var(--primary_color);
+}
+
+50%{
+    color: var(--primary_color);
+}
+
+75%{
+    color: var(--secondary_color);
+}
+
+100%{
+    color: var(--secondary_color);
+}
+
+}
+
+
+header .logo{
+    width: 100px;
+    height: 100%;
+    padding: 0.8rem;
+}
+
+header .logo img{
+    width: 100%;
+    padding: 0.3rem;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.774);
+    border: 0.1px solid var(--white_color);
+}
+
+header .menu{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .menu a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary_color);
+    padding: 0.5rem 0.8rem;
+}
+
+header .menu a:hover{
+    background-color: var(--secondary_color);
+}
+
+.edit_print{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 20%);
+}
+
+.edit_print h1{
+    background-color: transparent;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.resume{
+    width: 960px;
+    margin:  1rem auto;
+    padding: 2rem;
+    border: 0.2px solid black;
+    background-color: white;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1.5px solid rgb(41, 41, 41);
+}
+
+.head{
+    width: 100%;
+    height: 200px;
+    padding: 1.2rem;
+
+}
+
+.head h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-style: none;
+    background-color: transparent;
+}
+
+.head p{
+    margin-top: 0.5rem;
+    margin-bottom: 00.5rem;
+}
+
+.skills{
+    width: 100%;
+    height: 200px;
+    padding: 1.2rem;
+
+}
+
+.skills ul{
+    padding-left: 1rem;    
+
+}
+
+.skills ul li{
+    list-style-type: square;
+    margin-top: 0.5rem;
+
+
+}
+
+.work_exp{
+    width: 100%;
+    height: 200px;
+    padding: 1.2rem;
+
+}
+
+.work_exp ul{
+    padding-left: 1rem;
+
+}
+
+.work_exp ul li{
+    list-style-type: square;
+    margin-top: 0.5rem;
+}
+
+
+.education{
+    width: 100%;
+    height: 200px;
+    padding: 1.2rem;
+
+}
+
+.education p{
+    margin-top: 0.5rem;
+    margin-bottom: 00.5rem;
+}
+
+
+
+.objectives{
+    width: 100%;
+    height: 200px;
+    padding: 1.2rem;
+}
+
+.objectives p{
+    margin-top: 0.5rem;
+    margin-bottom: 00.5rem;
+
+}
+
+.functions{
+    width: 960px;
+    height: 200px;
+    padding: 1.2rem;
+    margin: 1rem auto;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 30%);
+    border: 1px solid white;
+
+}
+
+.functions button{
+    padding: 1rem;
+    text-transform: capitalize;
+    color: var(--primary_color);
+    background-color: var(--secondary_color);
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.functions button:hover{
+    background-color: var(--black_color);
+}
+
+
+
+footer{
+    height: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 1.2rem;
+    background-color: black;
+    color: var(--text_color);
+
+}
+
+footer a{
+    color: var(--text_color);
+
+}
+
+
+
+
+@media print {
+    body{
+        background-color: white;
+    }
+    .resume{
+        border: 0.2px solid black;
+        background-color: white;
+    }
+}
