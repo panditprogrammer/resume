@@ -19,8 +19,6 @@
 h1{
     padding: 0.5rem;
     font-size: 1.2rem;
-    /* border-bottom: 1px groove black; */
-    /* border-bottom-style: double; */
     background-color: #9fb8cd;;
 }
 
@@ -61,25 +59,25 @@ header .desc{
 }
 
 @keyframes color_change{
-0%{
-    color: var(--secondary_color);
-}
+    0%{
+        color: var(--secondary_color);
+    }
 
-25%{
-    color: var(--primary_color);
-}
+    25%{
+        color: var(--primary_color);
+    }
 
-50%{
-    color: var(--primary_color);
-}
+    50%{
+        color: var(--primary_color);
+    }
 
-75%{
-    color: var(--secondary_color);
-}
+    75%{
+        color: var(--secondary_color);
+    }
 
-100%{
-    color: var(--secondary_color);
-}
+    100%{
+        color: var(--secondary_color);
+    }
 
 }
 
@@ -289,7 +287,6 @@ footer a{
     }
 
 }
-
 
 
 @media print {
