@@ -31,6 +31,8 @@ p{
 
 }
 
+
+
 body{
     width: 100%;
     height: 100%;
@@ -127,7 +129,8 @@ header .menu a:hover{
 }
 
 .resume{
-    width: 960px;
+    /* width: 960px; */
+    width: 80%;
     margin:  1rem auto;
     padding: 2rem;
     border: 0.2px solid black;
@@ -145,7 +148,7 @@ header .menu a:hover{
 
 .head{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     padding: 1.2rem;
 
 }
@@ -165,7 +168,7 @@ header .menu a:hover{
 
 .skills{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     padding: 1.2rem;
 
 }
@@ -184,7 +187,7 @@ header .menu a:hover{
 
 .work_exp{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     padding: 1.2rem;
 
 }
@@ -202,7 +205,7 @@ header .menu a:hover{
 
 .education{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     padding: 1.2rem;
 
 }
@@ -216,7 +219,7 @@ header .menu a:hover{
 
 .objectives{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     padding: 1.2rem;
 }
 
@@ -227,8 +230,9 @@ header .menu a:hover{
 }
 
 .functions{
-    width: 960px;
-    height: 200px;
+    /* width: 960px; */
+    width: 80%;
+    /* height: 200px; */
     padding: 1.2rem;
     margin: 1rem auto;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 30%);
@@ -268,6 +272,23 @@ footer a{
 
 }
 
+@media screen and (max-width: 900px){
+    .desc{
+        opacity: 0.2;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    header .menu{
+        width: 70%;
+        
+    }
+    .desc{
+        display: none;
+    }
+
+}
 
 
 
